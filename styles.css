@@ -44,10 +44,10 @@ body {
 }
 
 .logo img {
-  height: 72px;
+  height: 46px;
   width: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .nav {
@@ -296,9 +296,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .logo img {
-    height: 58px;
-  }
+.logo img {
+  height: 42px;
+}
 
   .nav {
     display: none;

@@ -31,17 +31,23 @@ body {
   background: rgba(244, 234, 223, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
-  padding: 1rem 5%;
+  padding: 0.75rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: var(--brown);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.logo img {
+  height: 72px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .nav {
@@ -262,6 +268,20 @@ h3 {
   margin-top: 0.4rem;
 }
 
+.floating-call {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 20;
+  background: var(--brown);
+  color: white;
+  padding: 0.85rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
 footer {
   background: var(--dark);
   color: var(--cream);
@@ -276,10 +296,14 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .logo img {
+    height: 58px;
+  }
+
   .nav {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 5%;
     right: 5%;
     background: var(--light);

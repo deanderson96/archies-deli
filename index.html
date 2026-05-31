@@ -3,195 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Archie’s Deli | Duntocher, Glasgow</title>
-  <meta name="description" content="Archie’s Deli in Duntocher, Glasgow. Fresh breakfast rolls, hot food, cold rolls, drinks, cakes and takeaway favourites." />
+  <meta name="description" content="Archie's Deli in Duntocher, Glasgow. Fresh rolls, breakfasts, hot food, drinks, cakes and takeaway favourites." />
+  <title>Archie's Deli | Duntocher, Glasgow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <a href="#home" class="logo">Archie’s Deli</a>
-
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
-
-    <nav class="nav">
-      <a href="#menu">Menu</a>
-      <a href="#hours">Hours</a>
-      <a href="#location">Find Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div>
-        <p class="tagline">Local deli • Sit in • Takeaway</p>
-        <h1>Fresh food, hot rolls and deli favourites in Duntocher.</h1>
-        <p class="intro">
-          Visit Archie’s Deli at 1 Old Street, Duntocher, G81 6DE.
-          Open Monday to Saturday for breakfast, lunch, drinks and cakes.
-        </p>
-
-        <div class="buttons">
-          <a href="tel:01413788442" class="button primary">Call 0141 378 8442</a>
-          <a href="#menu" class="button secondary">View Menu</a>
-        </div>
-      </div>
-
-      <aside class="today-card">
-        <p class="tagline">Today’s opening times</p>
-        <h2 id="today-day">Today</h2>
-        <p id="today-hours" class="today-hours">Loading...</p>
-        <p id="today-status" class="status"></p>
-      </aside>
-    </section>
-
-    <section id="menu" class="section">
-      <p class="tagline">Our Menu</p>
-      <h2>Breakfast, rolls, hot food, drinks and more</h2>
-      <p class="note">Prices shown as takeaway / sit in where available.</p>
-
-      <div class="menu-grid">
-        <article class="card">
-          <h3>Breakfast</h3>
-          <p><strong>Breakfast</strong><br>Sausage Link, 2 Bacon, Potato Scone, Fried Egg, Black Pudding, Beans, Buttered Roll & Tea<br><b>£8.00 / £9.95</b></p>
-          <p><strong>Big Breakfast</strong><br>2 Square, 2 Links, 3 Bacon, 2 Potato Scone, Black Pudding, 2 Fried Eggs, Beans, Buttered Roll & Tea<br><b>£9.95 / £11.95</b></p>
-          <p><strong>Veggie Breakfast</strong><br>Sausage, Potato Scone, Egg, Mushrooms, Tomatoes, Hash Brown, Buttered Roll & Tea<br><b>£9.95 / £11.95</b></p>
-        </article>
-
-        <article class="card">
-          <h3>Hot Rolls</h3>
-          <ul>
-            <li>Potato Scone — £2.40 / £2.95</li>
-            <li>Hash Brown — £2.40 / £2.95</li>
-            <li>Black Pudding — £2.50 / £2.95</li>
-            <li>Haggis — £2.50 / £2.95</li>
-            <li>Square Sausage — £2.70 / £3.20</li>
-            <li>Links — £2.70 / £3.20</li>
-            <li>Egg — £2.50 / £2.95</li>
-            <li>Scrambled Egg — £2.90 / £3.25</li>
-            <li>Bacon — £2.90 / £3.25</li>
-            <li>BLT — £4.00 / £4.50</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Cold Rolls</h3>
-          <ul>
-            <li>Ham — £2.50 / £2.95</li>
-            <li>Chopped Pork — £2.50 / £2.85</li>
-            <li>Corned Beef — £2.50 / £2.95</li>
-            <li>Turkey — £2.50 / £2.95</li>
-            <li>Cheese — £2.50 / £2.95</li>
-            <li>Tuna — £2.90 / £3.25</li>
-            <li>Chicken Mayo — £2.90 / £3.25</li>
-            <li>Chicken Tikka — £2.90 / £3.25</li>
-            <li>Chicken Coronation — £2.90 / £3.25</li>
-            <li>Chicken Cajun — £2.90 / £3.25</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Hot Food & Mains</h3>
-          <ul>
-            <li>Toasties — from £3.50 / £4.75</li>
-            <li>Wraps — from £3.50 / £4.75</li>
-            <li>Salad Box — from £4.50 / £5.95</li>
-            <li>Pasta Box — from £5.00 / £6.25</li>
-            <li>Panini’s — from £4.50 / £4.95</li>
-            <li>Salt & Chilli Chicken & Chips — £8.00 / £9.50</li>
-            <li>Macaroni & Chips — £8.00 / £9.50</li>
-            <li>Chicken Curry & Chips — £8.00 / £9.50</li>
-            <li>Scampi & Chips — £8.95 / £10.50</li>
-            <li>Soup & Sandwich — £5.50 / £6.50</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Light Bites</h3>
-          <ul>
-            <li>Breakfast Wrap — £4.50 / £6.50</li>
-            <li>Toast & Scrambled Egg — £4.50 / £5.95</li>
-            <li>Toast & Beans — £4.50 / £5.95</li>
-            <li>Toast & Macaroni — £4.50 / £6.50</li>
-            <li>Beefburger — £3.75</li>
-            <li>Cheeseburger — £4.70 / £4.50</li>
-            <li>Spicy Chicken Burger — £4.25</li>
-            <li>Spicy Chicken Wrap — £4.50</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Drinks, Soup & Cakes</h3>
-          <ul>
-            <li>Latte — £3.20 / £3.50</li>
-            <li>Flat White — £3.20 / £3.50</li>
-            <li>Cappuccino — £3.20 / £3.70</li>
-            <li>Mocha — £3.80 / £4.00</li>
-            <li>Tea — £1.80 / £2.20</li>
-            <li>Cans — £1.30 / £1.95</li>
-            <li>Soup of the day — £2.75 / £3.95</li>
-            <li>Selection of cakes — from £2.95</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="hours" class="section hours-section">
-      <p class="tagline">Opening Hours</p>
-      <h2>Open Monday to Saturday</h2>
-
-      <div class="hours-list">
-        <p><strong>Monday:</strong> 08:00 - 14:00</p>
-        <p><strong>Tuesday:</strong> 08:00 - 14:00</p>
-        <p><strong>Wednesday:</strong> 08:00 - 14:00</p>
-        <p><strong>Thursday:</strong> 08:00 - 14:00</p>
-        <p><strong>Friday:</strong> 08:00 - 14:00</p>
-        <p><strong>Saturday:</strong> 08:00 - 14:00</p>
-        <p><strong>Sunday:</strong> Closed</p>
-      </div>
-    </section>
-
-    <section id="location" class="section">
-      <p class="tagline">Find Us</p>
-      <h2>Archie’s Deli</h2>
-      <p class="large">
-        1 Old Street<br>
-        Duntocher<br>
-        G81 6DE
-      </p>
-
-      <a class="button primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Archie's%20Deli%201%20Old%20Street%20Duntocher%20G81%206DE">
-        Open in Google Maps
-      </a>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <p class="tagline">Contact</p>
-      <h2>Get in touch</h2>
-
-      <div class="contact-grid">
-        <a href="tel:01413788442" class="contact-card">
-          <strong>Phone</strong>
-          <span>0141 378 8442</span>
-        </a>
-
-        <a href="mailto:admin@delitree.co.uk" class="contact-card">
-          <strong>Email</strong>
-          <span>admin@delitree.co.uk</span>
-        </a>
-
-        <a href="https://www.instagram.com/archies.deli" target="_blank" class="contact-card">
-          <strong>Instagram</strong>
-          <span>@archies.deli</span>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> Archie’s Deli. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<header class="site-header">
+  <a class="brand" href="#home"><span class="brand-mark">A</span><span><strong>Archie’s Deli</strong><small>Duntocher, Glasgow</small></span></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="site-nav">
+    <a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#location">Find Us</a><a class="nav-cta" href="tel:01413788442">Call Now</a>
+  </nav>
+</header>
+<main>
+<section id="home" class="hero section">
+  <div class="hero-content">
+    <p class="eyebrow">Local deli • Breakfast • Lunch • Takeaway</p>
+    <h1>Fresh rolls, hot food and deli favourites in Duntocher.</h1>
+    <p class="hero-text">Visit Archie’s Deli at 1 Old Street, Duntocher for breakfasts, hot rolls, cold rolls, mains, light bites, drinks and cakes.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="tel:01413788442">Call 0141 378 8442</a><a class="btn btn-secondary" href="#menu">View Menu</a></div>
+    <div class="quick-info"><div><span>Address</span><strong>1 Old Street, Duntocher, G81 6DE</strong></div><div><span>Open</span><strong>Mon–Sat, 08:00–14:00</strong></div><div><span>Sunday</span><strong>Closed</strong></div></div>
+  </div>
+  <aside class="hero-card"><h2>Opening Hours</h2><ul class="hours-list compact"><li><span>Monday</span><strong>08:00 - 14:00</strong></li><li><span>Tuesday</span><strong>08:00 - 14:00</strong></li><li><span>Wednesday</span><strong>08:00 - 14:00</strong></li><li><span>Thursday</span><strong>08:00 - 14:00</strong></li><li><span>Friday</span><strong>08:00 - 14:00</strong></li><li><span>Saturday</span><strong>08:00 - 14:00</strong></li><li class="closed"><span>Sunday</span><strong>Closed</strong></li></ul></aside>
+</section>
+<section class="section intro"><div class="section-heading"><p class="eyebrow">Archie’s Deli</p><h2>Warm, local, and made for everyday favourites.</h2></div><p>From breakfast rolls and hot drinks to mains, chips, soups and cakes, Archie’s Deli is a friendly local stop for sit-in and takeaway food.</p></section>
+<section id="menu" class="section menu-section"><div class="section-heading centred"><p class="eyebrow">Full menu</p><h2>Breakfasts, rolls, mains, drinks and more</h2><p>Prices are shown for takeaway and sit-in where available.</p></div>
+<div class="menu-grid">
+<article class="menu-card"><h3>Breakfast</h3><div class="menu-item featured"><div><strong>Breakfast</strong><p>Sausage Link, 2 x Bacon, Potato Scone, Fried Egg, Black Pudding, Beans, Buttered Roll & Tea</p></div><span>£8.00 / £9.95</span></div><div class="menu-item featured"><div><strong>Big Breakfast</strong><p>2 x Square, 2 x Links, 3 x Bacon, 2 x Potato Scone, 1 x Black Pudding, 2 x Fried Eggs, Beans, Buttered Roll & Tea</p></div><span>£9.95 / £11.95</span></div><div class="menu-item featured"><div><strong>Veggie Breakfast</strong><p>Sausage, Potato Scone, Egg, Mushrooms, Tomatoes, Hash Brown, Buttered Roll & Tea</p></div><span>£9.95 / £11.95</span></div></article>
+<article class="menu-card"><h3>Hot Rolls</h3><ul class="price-list"><li><span>Potato Scone</span><strong>£2.40 / £2.95</strong></li><li><span>Hash Brown</span><strong>£2.40 / £2.95</strong></li><li><span>Black Pudding</span><strong>£2.50 / £2.95</strong></li><li><span>Haggis</span><strong>£2.50 / £2.95</strong></li><li><span>Square Sausage</span><strong>£2.70 / £3.20</strong></li><li><span>Links</span><strong>£2.70 / £3.20</strong></li><li><span>Egg</span><strong>£2.50 / £2.95</strong></li><li><span>Scrambled Egg</span><strong>£2.90 / £3.25</strong></li><li><span>Bacon</span><strong>£2.90 / £3.25</strong></li><li><span>BLT</span><strong>£4.00 / £4.50</strong></li></ul></article>
+<article class="menu-card"><h3>Cold Rolls</h3><ul class="price-list"><li><span>Ham</span><strong>£2.50 / £2.95</strong></li><li><span>Chopped Pork</span><strong>£2.50 / £2.85</strong></li><li><span>Corned Beef</span><strong>£2.50 / £2.95</strong></li><li><span>Turkey</span><strong>£2.50 / £2.95</strong></li><li><span>Cheese</span><strong>£2.50 / £2.95</strong></li><li><span>Tuna</span><strong>£2.90 / £3.25</strong></li><li><span>Chicken Mayo</span><strong>£2.90 / £3.25</strong></li><li><span>Chicken Tikka</span><strong>£2.90 / £3.25</strong></li><li><span>Chicken Coronation</span><strong>£2.90 / £3.25</strong></li><li><span>Chicken Cajun</span><strong>£2.90 / £3.25</strong></li></ul></article>
+<article class="menu-card"><h3>Hot Food & Mains</h3><ul class="price-list"><li><span>Toasties</span><strong>from £3.50 / £4.75</strong></li><li><span>Wraps</span><strong>from £3.50 / £4.75</strong></li><li><span>Salad Box</span><strong>from £4.50 / £5.95</strong></li><li><span>Pasta Box</span><strong>from £5.00 / £6.25</strong></li><li><span>Panini’s</span><strong>from £4.50 / £4.95</strong></li><li><span>Salt & Chilli Chicken & Chips</span><strong>£8.00 / £9.50</strong></li><li><span>Macaroni & Chips</span><strong>£8.00 / £9.50</strong></li><li><span>Chicken Curry & Chips</span><strong>£8.00 / £9.50</strong></li><li><span>Scampi & Chips</span><strong>£8.95 / £10.50</strong></li><li><span>Soup & Sandwich</span><strong>£5.50 / £6.50</strong></li></ul></article>
+<article class="menu-card"><h3>Light Bites</h3><ul class="price-list"><li><span>Breakfast Wrap</span><strong>£4.50 / £6.50</strong></li><li><span>Toast & Scrambled Egg</span><strong>£4.50 / £5.95</strong></li><li><span>Toast & Beans</span><strong>£4.50 / £5.95</strong></li><li><span>Toast & Macaroni</span><strong>£4.50 / £6.50</strong></li><li><span>Beefburger</span><strong>£3.75 / £3.75</strong></li><li><span>Cheeseburger</span><strong>£4.70 / £4.50</strong></li><li><span>Spicy Chicken Burger</span><strong>£4.25 / £4.25</strong></li><li><span>Spicy Chicken Wrap</span><strong>£4.50 / £4.50</strong></li></ul></article>
+<article class="menu-card"><h3>Drinks, Soup & Cakes</h3><ul class="price-list"><li><span>Latte</span><strong>£3.20 / £3.50</strong></li><li><span>Flat White</span><strong>£3.20 / £3.50</strong></li><li><span>Cappuccino</span><strong>£3.20 / £3.70</strong></li><li><span>Mocha</span><strong>£3.80 / £4.00</strong></li><li><span>Tea</span><strong>£1.80 / £2.20</strong></li><li><span>Cans</span><strong>£1.30 / £1.95</strong></li><li><span>Soup of the day</span><strong>£2.75 / £3.95</strong></li><li><span>Selection of cakes</span><strong>from £2.95</strong></li></ul></article>
+</div><div class="image-menu"><h3>Original Menu</h3><p>Tap or click a menu image to view it larger.</p><div class="menu-images"><a href="images/menu-page-1.jpeg"><img src="images/menu-page-1.jpeg" alt="Archie's Deli menu page one"></a><a href="images/menu-page-2.jpeg"><img src="images/menu-page-2.jpeg" alt="Archie's Deli menu page two"></a></div></div></section>
+<section id="hours" class="section hours-section"><div class="section-heading"><p class="eyebrow">Opening times</p><h2>Open Monday to Saturday</h2></div><div class="hours-layout"><ul class="hours-list"><li><span>Monday</span><strong>08:00 - 14:00</strong></li><li><span>Tuesday</span><strong>08:00 - 14:00</strong></li><li><span>Wednesday</span><strong>08:00 - 14:00</strong></li><li><span>Thursday</span><strong>08:00 - 14:00</strong></li><li><span>Friday</span><strong>08:00 - 14:00</strong></li><li><span>Saturday</span><strong>08:00 - 14:00</strong></li><li class="closed"><span>Sunday</span><strong>Closed</strong></li></ul><img class="hours-image" src="images/opening-hours.png" alt="Archie's Deli opening hours"></div></section>
+<section id="location" class="section location-section"><div class="location-card"><div><p class="eyebrow">Find us</p><h2>Archie’s Deli</h2><p class="address">1 Old Street<br>Duntocher, G81 6DE</p><p>Phone: <a href="tel:01413788442">0141 378 8442</a></p><div class="hero-actions"><a class="btn btn-primary" href="tel:01413788442">Call Now</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Archie's%20Deli%201%20Old%20Street%20Duntocher%20G81%206DE">Open in Google Maps</a></div></div><div class="map-placeholder"><span>Map</span><p>1 Old Street, Duntocher, G81 6DE</p></div></div></section>
+</main><a class="floating-call" href="tel:01413788442">Call</a><footer class="site-footer"><p>© <span id="year"></span> Archie’s Deli. All rights reserved.</p></footer><script src="script.js"></script></body></html>
